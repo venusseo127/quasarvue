@@ -5,6 +5,7 @@
  * Edit that file instead (line-awesome.js).
  */
 
+
 import {
   laCheckSolid,
   laExclamationTriangleSolid,
@@ -21,8 +22,9 @@ import {
   laSlidersHSolid,
   laSwatchbookSolid,
   laSyncAltSolid,
-  laCircleSolid,
-  laThSolid,
+  laChevronUpSolid,
+  laChevronDownSolid,
+  laSquareSolid,
   laTimesCircleSolid,
   laClock,
   laCalendarCheck,
@@ -52,15 +54,13 @@ import {
   laRedoSolid,
   laCodeSolid,
   laFontSolid,
-  laChevronDownSolid,
   laPlusSolid,
   laTimesSolid,
   laExclamationCircleSolid,
-  laStepBackwardSolid,
-  laStepForwardSolid,
+  laFastBackwardSolid,
+  laFastForwardSolid,
   laStarSolid,
   laPencilAltSolid,
-  laChevronUpSolid,
   laPlaySolid,
   laPlusSquareSolid,
   laUploadSolid,
@@ -98,8 +98,9 @@ export default {
   carousel: {
     left: laChevronLeftSolid,
     right: laChevronRightSolid,
-    navigationIcon: laCircleSolid,
-    thumbnails: laThSolid
+    up: laChevronUpSolid,
+    down: laChevronDownSolid,
+    navigationIcon: laSquareSolid
   },
   chip: {
     remove: laTimesCircleSolid,
@@ -156,10 +157,10 @@ export default {
     error: laExclamationCircleSolid
   },
   pagination: {
-    first: laStepBackwardSolid,
+    first: laFastBackwardSolid,
     prev: laChevronLeftSolid,
     next: laChevronRightSolid,
-    last: laStepForwardSolid
+    last: laFastForwardSolid
   },
   rating: {
     icon: laStarSolid
@@ -178,8 +179,10 @@ export default {
   table: {
     arrowUp: laArrowUpSolid,
     warning: laExclamationTriangleSolid,
+    firstPage: laFastBackwardSolid,
     prevPage: laChevronLeftSolid,
-    nextPage: laChevronRightSolid
+    nextPage: laChevronRightSolid,
+    lastPage: laFastForwardSolid
   },
   tree: {
     icon: laPlaySolid

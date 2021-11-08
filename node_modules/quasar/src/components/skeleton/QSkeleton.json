@@ -5,6 +5,12 @@
     "docsUrl": "https://v1.quasar.dev/vue-components/skeleton"
   },
 
+  "behavior": {
+    "$listeners": true
+  },
+
+  "addedIn": "v1.6.0",
+
   "props": {
     "dark": {
       "extends": "dark"

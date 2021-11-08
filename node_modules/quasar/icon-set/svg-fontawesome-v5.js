@@ -5,6 +5,7 @@
  * Edit that file instead (fontawesome-v5.js).
  */
 
+
 import {
   fasCheck,
   fasExclamationTriangle,
@@ -21,8 +22,9 @@ import {
   fasSlidersH,
   fasSwatchbook,
   fasSyncAlt,
+  fasChevronUp,
+  fasChevronDown,
   fasCircle,
-  fasTh,
   fasTimesCircle,
   farClock,
   farCalendarCheck,
@@ -52,7 +54,6 @@ import {
   fasRedo,
   fasCode,
   fasFont,
-  fasChevronDown,
   fasPlus,
   fasTimes,
   fasExclamationCircle,
@@ -60,7 +61,6 @@ import {
   fasStepForward,
   fasStar,
   fasPencilAlt,
-  fasChevronUp,
   fasPlay,
   fasPlusSquare,
   fasUpload,
@@ -97,9 +97,10 @@ export default {
   },
   carousel: {
     left: fasChevronLeft,
-    right: fasChevronRight, // TODO
-    navigationIcon: fasCircle,
-    thumbnails: fasTh
+    right: fasChevronRight,
+    up: fasChevronUp,
+    down: fasChevronDown,
+    navigationIcon: fasCircle
   },
   chip: {
     remove: fasTimesCircle,
@@ -178,8 +179,10 @@ export default {
   table: {
     arrowUp: fasArrowUp,
     warning: fasExclamationTriangle,
+    firstPage: fasStepBackward,
     prevPage: fasChevronLeft,
-    nextPage: fasChevronRight
+    nextPage: fasChevronRight,
+    lastPage: fasStepForward
   },
   tree: {
     icon: fasPlay

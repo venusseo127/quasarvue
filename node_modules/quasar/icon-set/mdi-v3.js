@@ -28,8 +28,9 @@ export default {
   carousel: {
     left: 'mdi-chevron-left',
     right: 'mdi-chevron-right',
-    navigationIcon: 'mdi-circle',
-    thumbnails: 'mdi-view-carousel'
+    up: 'mdi-chevron-up',
+    down: 'mdi-chevron-down',
+    navigationIcon: 'mdi-circle'
   },
   chip: {
     remove: 'mdi-close-circle',
@@ -99,10 +100,10 @@ export default {
     error: 'mdi-alert-circle'
   },
   pagination: {
-    first: 'mdi-page-first',
+    first: 'mdi-chevron-double-left',
     prev: 'mdi-chevron-left',
     next: 'mdi-chevron-right',
-    last: 'mdi-page-last'
+    last: 'mdi-chevron-double-right'
   },
   rating: {
     icon: 'mdi-star'
@@ -121,8 +122,10 @@ export default {
   table: {
     arrowUp: 'mdi-arrow-up',
     warning: 'mdi-alert',
+    firstPage: 'mdi-chevron-double-left',
     prevPage: 'mdi-chevron-left',
-    nextPage: 'mdi-chevron-right'
+    nextPage: 'mdi-chevron-right',
+    lastPage: 'mdi-chevron-double-right'
   },
   tree: {
     icon: 'mdi-play'

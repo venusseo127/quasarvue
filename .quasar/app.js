@@ -35,12 +35,14 @@ export default async function () {
   // Here we inject the router, store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    el: '#q-app',
     router,
     
     render: h => h(App)
   }
 
+
+  
+  app.el = '#q-app'
   
 
   // expose the app, the router and the store.

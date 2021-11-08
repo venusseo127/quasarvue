@@ -1,5 +1,5 @@
 {
-  "mixins": [ "mixins/size" ],
+  "mixins": [ "mixins/size", "mixins/form" ],
 
   "props": {
     "value": {
@@ -39,6 +39,15 @@
       "default": null,
       "examples": [ 0, "not_answered" ],
       "category": "behavior"
+    },
+
+    "toggle-order": {
+      "type": "String",
+      "desc": "Determines toggle order of the two states ('t' stands for state of true, 'f' for state of false); If 'toggle-indeterminate' is true, then the order is: indet -> first state -> second state -> indet (and repeat), otherwise: indet -> first state -> second state -> first state -> second state -> ...",
+      "default": "tf",
+      "values": [ "tf", "ft" ],
+      "category": "behavior",
+      "addedIn": "v1.12.0"
     },
 
     "toggle-indeterminate": {
@@ -93,7 +102,22 @@
 
   "events": {
     "input": {
-      "extends": "input"
+      "desc": "Emitted when the component needs to change the model; Is also used by v-model",
+      "params": {
+        "value": {
+          "type": "Any",
+          "desc": "New model value",
+          "required": true,
+          "__exemption": [ "examples" ]
+        },
+        "evt": {
+          "type": "Object",
+          "desc": "JS event object",
+          "required": true,
+          "__exemption": [ "examples" ],
+          "addedIn":"v1.11.2"
+        }
+      }
     }
   },
 
